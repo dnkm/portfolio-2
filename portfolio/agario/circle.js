@@ -4,8 +4,8 @@ class Circle {
         this.pen = pen;
         this.x = x;
         this.y = y;
-        this.vx = 0.1;
-        this.vy = 0.1;
+        this.vx = 0;
+        this.vy = 0;
         this.radius = radius;
         this.color = color;
         this.player = player;
@@ -66,6 +66,7 @@ class Circle {
 
         // draw circle
         this.pen.beginPath();
+        // this.pen.translate(this.canvas.width/2 - this.player.x, this.canvas.height/2 - this.player.y);
         this.pen.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
         this.pen.fillStyle = this.color;
         this.pen.fill();
@@ -79,6 +80,7 @@ class Player extends Circle {
         this.targetX = x;
         this.targetY = y;
         this.speed = 1;
+        this.player = this;
 
         document.addEventListener('mousemove', (event) => {
             this.targetX = event.clientX;
