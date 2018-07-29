@@ -1,0 +1,23 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: dodgerblue;
+    color: white;
+    padding: 20px;
+}
+
+.day {
+    background: beige;
+    width: calc(100% / 7);
+    height: 40px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    margin: -1px 0 0 -1px;
+    flex-grow: 1;
+}

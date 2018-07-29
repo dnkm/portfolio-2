@@ -1,0 +1,47 @@
+<html>
+
+    <head>
+        <title>Button Generator</title>
+        <style>
+            button {
+                width: 50px;
+                height: 50px;
+                background: beige;
+                border: 0;
+                margin: 3px;
+            }
+            button:nth-child(2n) {
+                background: pink;
+            }
+            button:hover {
+                background: black;
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <h1>Button Generator</h1>
+        <p>Click on the buttons!</p>
+        <a href="../index.html">Back to main</a>
+        <br><br>
+
+        <script> 
+            let num = 1;
+            let id = setInterval(function() {
+                let btn = document.createElement('button');
+                btn.innerText = num++;
+                document.body.appendChild(btn);
+
+                btn.addEventListener('click', function() {
+                    btn.parentElement.removeChild(btn);
+                })
+
+                if (num == 31)
+                    clearInterval(id);
+            }, 100);
+        </script>
+    </body>
+
+</html>

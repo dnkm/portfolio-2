@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-btn {
+    background: dodgerblue;
+    color: white;
+    border: none;
+    margin: 10px 0px 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.todo {
+    background: lightgreen;
+    color: white;
+    border: none;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.todo:hover {
+    background: lightseagreen;
+}
