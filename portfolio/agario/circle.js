@@ -4,8 +4,8 @@ class Circle {
         this.pen = pen;
         this.x = x;
         this.y = y;
-        this.vx = 0.1;
-        this.vy = 0.1;
+        this.vx = 0.5;
+        this.vy = 0.5;
         this.radius = radius;
         this.color = color;
         this.player = player;

@@ -1,0 +1,18 @@
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.App .input-form {
+  position: absolute;
+  bottom: 0;
+  background: skyblue;
+  width: 100%;
+  padding: 1px;
+
+  display: flex;
+}
+
+.App .input-form input {
+  flex-grow: 1;
+}
